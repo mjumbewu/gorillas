@@ -2,8 +2,18 @@
 <html>
 <head>
     <title>Gorillas!</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+    <canvas id="game-scene" width="800" height="600"></canvas>
+    
+    <script src="building.js"></script>
+    <script src="scene.js"></script>
+    <script src="main.js"></script>
+    <script>
+        var game = Gorillas.main($('#game-scene'));
+        game.scene.rebuild(8, 100, 400);
+    </script>
 </body>
 </html>
